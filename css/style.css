@@ -1,0 +1,71 @@
+@font-face{
+    font-family: runescape;
+    src: url("../fonts/runescape.ttf") format('truetype')
+
+
+}
+body{
+    background-color: steelblue;
+    font-family: runescape;
+    
+}
+
+header{
+    border: 2px solid black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    
+}
+
+#headerTable{
+    background-color: white;
+    border: 4px solid black;
+    border-style: groove black;
+    border-width: 2px;
+    display:inline-block;
+    
+    
+}
+
+
+button{
+    padding: 4px;
+    
+}
+
+#mainDiv{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bodyTable{
+    background-color: white;
+    border: 4px solid black;
+    border-style: groove black;
+    border-width: 2px;
+    margin: 4px;
+    min-width: 30%;
+    
+}
+
+td{
+    border: 4px solid black;
+    border-style: solid black;
+    border-width: 2px;
+    padding: 10px;
+}
+
+#skillTable{
+    min-width: 100%;
+}
+
+.skillTitle{
+    font-size:larger;
+    font-weight: bold;
+}

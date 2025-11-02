@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/scripts.js"></script>
+    
+</head>
+
+
+<body>
+
+    <div id="headerdiv">
+    <header>
+        <table id="headerTable">
+            <tr>
+                <td colspan="2">
+                    <h1 id="mainTitle">Main Webpage Title</h1>
+                    <button onclick=getPlayerName()>Click me</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <form id="submitPlayerName">
+                    <input type="text" name="username" id="textbod" required>
+                    <input type="submit" value="Lookup Player" onclick=loadPlayerData()>
+
+                    </form>
+
+                </td>
+            </tr>
+        </table>
+    </header>
+    </div>
+
+    <div id="mainDiv">
+
+        <table id="bodyTable">
+            <!-- two table rows, one for the img+overall scores, the other for the 23 skill subtable-->
+            <!-- the first row contains one cell for image, and the other for subtable for 3 gen info-->
+
+            <tr id="bodyTableTop">
+                <td>(Image goes here)</td>
+                <td>
+                    <table id="generalSubtable">
+                        <tr>
+                            <td>Name</td>
+                        </tr>
+                        <tr>
+                            <td>Total Level: </td>
+                        </tr>
+                        <tr>
+                            <td>Total XP: </td>
+                        </tr>
+
+                    </table>
+                </td>
+              
+            </tr>
+
+            <!-- second row of bodyTable, contains subtable for 23 skills-->
+            <tr id="bodyTableBottom">
+                <td colspan="2">
+                    <table id="skillTable">
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Attack icon.png"><span class="skillTitle">Attack: </span><span id="attackLevel"></span></td>
+                            <td class="skillCell"><img src="images/Hitpoints icon.png"><span class="skillTitle">Hitpoints: </span><span id="hitpointsLevel"></span></td>
+                            <td class="skillCell"><img src="images/Mining icon.png"><span class="skillTitle">Mining: </span><span id="miningLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Strength icon.png"><span class="skillTitle">Strength: </span><span id="strengthLevel"></span></td></td>
+                            <td class="skillCell"><img src="images/Agility icon.png"><span class="skillTitle">Agility: </span><span id="agilityLevel"></span></td>
+                            <td class="skillCell"><img src="images/Smithing icon.png"><span class="skillTitle">Smithing: </span><span id="smithingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Defence icon.png"><span class="skillTitle">Defence: </span><span id="defenceLevel"></span></td>
+                            <td class="skillCell"><img src="images/Herblore icon.png"><span class="skillTitle">Herblore: </span><span id="herbloreLevel"></span></td>
+                            <td class="skillCell"><img src="images/Fishing icon.png"><span class="skillTitle">Fishing: </span><span id="fishingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Ranged icon.png"><span class="skillTitle">Ranged: </span><span id="rangedLevel"></span></td>
+                            <td class="skillCell"><img src="images/Thieving icon.png"><span class="skillTitle">Thieving: </span><span id="thievingLevel"></span></td>
+                            <td class="skillCell"><img src="images/Cooking icon.png"><span class="skillTitle">Cooking: </span><span id="cookingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Prayer icon.png"><span class="skillTitle">Prayer: </span><span id="prayerLevel"></span></td>
+                            <td class="skillCell"><img src="images/Crafting icon.png"><span class="skillTitle">Crafting: </span><span id="craftingLevel"></span></td>
+                            <td class="skillCell"><img src="images/Firemaking icon.png"><span class="skillTitle">Firemaking: </span><span id="firemakingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Magic icon.png"><span class="skillTitle">Magic: </span><span id="magicLevel"></span></td>
+                            <td class="skillCell"><img src="images/Fletching icon.png"><span class="skillTitle">Fletching: </span><span id="fletchingLevel"></span></td>
+                            <td class="skillCell"><img src="images/Woodcutting icon.png"><span class="skillTitle">Woodcutting: </span><span id="woodcuttingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Runecraft icon.png"><span class="skillTitle">Runecraft: </span><span id="runecraftLevel"></span></td>
+                            <td class="skillCell"><img src="images/Slayer icon.png"><span class="skillTitle">Slayer: </span><span id="slayerLevel"></span></td>
+                            <td class="skillCell"><img src="images/Farming icon.png"><span class="skillTitle">Farming: </span><span id="farmingLevel"></span></td>
+                        </tr>
+
+                        <tr id="skillRow">
+                            <td class="skillCell"><img src="images/Construction icon.png"><span class="skillTitle">Construction: </span><span id="constructionLevel"></span></td>
+                            <td class="skillCell"><img src="images/Hunter icon.png"><span class="skillTitle">Hunter: </span><span id="hunterLevel"></span></td>
+                            <td class="skillCell"><img src="images/Skills icon.png"><span class="skillTitle">Total Level: </span><span id="totalLevel"></span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            
+
+
+        </table>
+    </div>
+</body>
+</html>
