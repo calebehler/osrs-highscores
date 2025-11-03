@@ -1,8 +1,13 @@
-function testFunction(){
-    //alert("test function called");    
+function submitPlayerName(){
 
-    //var playerName = (document.getElementById("textbod").value);
-    var logTest = "console log test";
-    console.log(logTest);
+    var playerName = (document.getElementById("textbod").value);
+
+    if(playerName == ""){
+        return false;
+    }
+    else{
+    console.log(playerName);
+    loadPlayerData(playerName);
+    }
 
 }
