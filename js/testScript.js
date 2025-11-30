@@ -14,3 +14,7 @@ function submitPlayerName(){
 
 
 }
+
+function showBossesTab(){
+    document.getElementById("mainTab1").hidden;
+}
