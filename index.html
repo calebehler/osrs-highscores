@@ -5,82 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Old School Highscores</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Skills icon.png">
     
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/testScript.js"></script>
     
 </head>
 
 
-<body>
+<body class="m-2">
 
-    <header>
-        <table id="headerTable">
-            <tr>
-                <td colspan="1">
-                    <h1 id="mainTitle">Old School Highscores</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
+    <header class="container-fluid align-content-center">
+        
+        <h1 class="text-center" id="mainTitle">Old School Highscores</h1>
+        
 
-                    <form action="#" onsubmit="submitPlayerName()" id="submitPlayerName">
-                    <input type="text" name="username" id="textbod" value="" required>
-                    <input type="submit" value="Lookup Player">
+            <form action="#" onsubmit="submitPlayerName()" id="submitPlayerName">
+            <input type="text" name="username" id="textbod" value="" required>
+            <input type="submit" value="Lookup Player">
+            </form>
 
-                    </form>
 
-                </td>
-            </tr>
-        </table>
-
-        <!-- Navbar Table -->
-        <div id="navbar">
-            <button class="navbarButton" id="skillsButton">Skills</button>
-            <button class="navbarButton" id="bossesButton">Bosses</button>
-            <button class="navbarButton" id="minigamesButton">Minigames</button>
-            <button class="navbarButton" id="raidsButton">Raids</button>
-        </div>       
-        </div>
+            <!-- Navbar -->
+            <nav class="nav nav-tabs justify-content-center">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="skills-tab" type="button" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" aria-controls="skills-tab-pane" aria-selected="true">Skills</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bosses-tab" type="button" data-bs-toggle="tab" data-bs-target="#bosses-tab-pane" aria-controls="bosses-tab-pane" aria-selected="false">Bosses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="raids-tab" type="button" data-bs-toggle="tab" data-bs-target="#raids-tab-pane" aria-controls="raids-tab-pane" aria-selected="false">Raids</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="minigames-tab" type="button" data-bs-toggle="tab" data-bs-target="#minigames-tab-pane" aria-controls="minigames-tab-pane" aria-selected="false">Minigames</button>
+                </li>
+            </nav>
 
     </header>
 
-    <div id="navBar">
+    <main>
+    <!-- main character info listed above tabs-->
 
-    </div>
+    
+    <!-- TABS -->
+    <!--- Divided into 4 categories: Skills, Bosses, Raids, Minigames -->
+    <!-- Each tab in their own tab-pane div -->
+    <div class="container tab-content border border-light p-3">
+        
+        <!-- Skills tab (home tab)-->
+        <div class="row tab-pane fade show active border border-danger justify-content-start" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
 
 
-    <div id="mainTab1" class="mainDiv">
-
-        <table class="bodyTable">
-            <!-- two table rows, one for the img+overall scores, the other for the 23 skill subtable-->
-            <!-- the first row contains one cell for image, and the other for subtable for 3 gen info-->
-
-            <tr id="bodyTableTop">
-                <td>(Image goes here)</td>
-                <td id="generalStats">
-                    <table id="generalSubtable">
-                        <tr>
-                            <td><span class="overallTitle">Name: </span><span id="playerName"></span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="overallTitle">Total Level: </span><span id="totalLevel"></span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="overallTitle">XP: </span><span id="totalXP"></span></td>
-                        </tr>
-
-                    </table>
-                </td>
-              
-            </tr>
-
-            <!-- second row of bodyTable, contains subtable for 23 skills-->
-            <tr id="bodyTableBottom">
-                <td colspan="2">
-                    <table id="skillTable">
+            <!-- Skills table -->
+            <div class="col-4">
+                    <table class="table table-responsive" id="skillTable">
 
                         <tr id="skillRow">
                             <td class="skillCell"><img src="images/Attack icon.png"><span class="skillTitle">Attack: </span><span id="attackLevel"></span></td>
@@ -130,41 +112,65 @@
                             <td class="skillCell"><img src="images/Skills icon.png"><span class="skillTitle">Total Level: </span><span class="totalLevel"></span></td>
                         </tr>
                     </table>
+                </div>
+
+
+
+        </div>
+
+        <!-- Bosses tab-->
+        <div class="tab-pane fade" id="bosses-tab-pane" role="tabpanel" aria-labelledby="bosses-tab" tabindex="0">
+            <p>Bosses tab content</p>
+        </div>
+
+        <!-- Raids tab -->
+        <div class="tab-pane fade" id="raids-tab-pane" role="tabpanel" aria-labelledby="raids-tab" tabindex="0">
+            <p>Raids tab content</p>
+        </div>
+
+        <!-- Minigames tab -->
+        <div class="tab-pane fade" id="minigames-tab-pane" role="tabpanel" aria-labelledby="minigames-tab" tabindex="0">
+            <p>Minigames tab content</p>
+        </div>
+
+    </div>
+
+
+
+
+    <div>
+
+            <!-- two table rows, one for the img+overall scores, the other for the 23 skill subtable-->
+            <!-- the first row contains one cell for image, and the other for subtable for 3 gen info-->
+
+            <tr id="bodyTableTop">
+                <td>(Image goes here)</td>
+                <td id="generalStats">
+                    <table id="generalSubtable">
+                        <tr>
+                            <td><span class="overallTitle">Name: </span><span id="playerName"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="overallTitle">Total Level: </span><span id="totalLevel"></span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="overallTitle">XP: </span><span id="totalXP"></span></td>
+                        </tr>
+
+                    </table>
                 </td>
+              
             </tr>
 
+            <!-- second row of bodyTable, contains subtable for 23 skills-->
+                
             
 
 
-        </table>
     </div>
 
-    <!-- TODO: 
-    -activity information
-    -add multiple "tabs" to the single webpage to avoid having to reload stats when swapping between tabs
-    -put each "tab" in a div, only show one at a time? rest are hidden
-    -->
 
-    <div id="mainTab2" class="mainDiv">
-
-        <table class="bodyTable">
-            <tr>
-                <th colspan="3">Bosses</th>
-            </tr>
-            <tr>
-                <td>Test Cell 1</td>
-                <td>Test Cell 2</td>
-                <td>Test Cell 3</td>
-            </tr>
-            <tr>
-                
-                <td>Test Cell 4</td>
-                <td>Test Cell 5</td>
-                <td>Test Cell 6</td>
-            </tr>
-        </table>
-
-    </div>
+</main>
     
 </body>
 </html>
