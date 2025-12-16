@@ -12,6 +12,8 @@ async function loadPlayerData(username) {
     const result = await response.json();
     console.log(result);
 
+    /* Populate the Skills Tab */
+
     document.getElementById("attackLevel").innerText=result.skills[1].level;
     document.getElementById("defenceLevel").innerText=result.skills[2].level;
     document.getElementById("strengthLevel").innerText=result.skills[3].level;
@@ -39,6 +41,11 @@ async function loadPlayerData(username) {
 
     document.getElementById("playerName").innerText=result.name;
     document.getElementById("totalXP").innerText=result.skills[0].xp;
+
+
+    /* Populate the Bosses Tab */
+    document.getElementById("abyssal-sire-kills").innerText=result.activities[20].score;
+
 
   } catch (error) {
     console.error(error.message);
