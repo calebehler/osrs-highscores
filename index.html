@@ -47,186 +47,188 @@
 
     </header>
 
-    <main class="container d-flex justify-content-center">
+    <main class="container-fluid d-flex justify-content-center">
     <!-- main character info listed above tabs-->
 
     
     <!-- TABS -->
     <!--- Divided into 4 categories: Skills, Bosses, Raids, Minigames -->
     <!-- Each tab in their own tab-pane div -->
-        <div class="row tab-content border border-light p-3 w-50">
+        <div class="row tab-content border border-light p-3 w-75">
             
             <!-- Skills tab (home tab)-->
-            <div class="col-auto tab-pane fade show active" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+            <div class="col-auto tab-pane fade" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
                 <!-- Skills grid -->
                 <div class="w-100">
                     <div class="row g-2">
+
                         <!-- Attack -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Attack icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Attack: </span><span id="attackLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Attack: </span><span id="attackLevel"></span></p>
                             </div>
                         </div>
+                        
                         <!-- Hitpoints -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Hitpoints icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Hitpoints: </span><span id="hitpointsLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Hitpoints: </span><span id="hitpointsLevel"></span></p>
                             </div>
                         </div>
                         <!-- Mining -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Mining icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Mining: </span><span id="miningLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Mining: </span><span id="miningLevel"></span></p>
                             </div>
                         </div>
                         <!-- Strength -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Strength icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Strength: </span><span id="strengthLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Strength: </span><span id="strengthLevel"></span></p>
                             </div>
                         </div>
                         <!-- Agility -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Agility icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Agility: </span><span id="agilityLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Agility: </span><span id="agilityLevel"></span></p>
                             </div>
                         </div>
                         <!-- Smithing -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Smithing icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Smithing: </span><span id="smithingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Smithing: </span><span id="smithingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Defence -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Defence icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Defence: </span><span id="defenceLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Defence: </span><span id="defenceLevel"></span></p>
                             </div>
                         </div>
                         <!-- Herblore -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Herblore icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Herblore: </span><span id="herbloreLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Herblore: </span><span id="herbloreLevel"></span></p>
                             </div>
                         </div>
                         <!-- Fishing -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Fishing icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Fishing: </span><span id="fishingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Fishing: </span><span id="fishingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Ranged -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Ranged icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Ranged: </span><span id="rangedLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Ranged: </span><span id="rangedLevel"></span></p>
                             </div>
                         </div>
                         <!-- Thieving -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Thieving icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Thieving: </span><span id="thievingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Thieving: </span><span id="thievingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Cooking -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Cooking icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Cooking: </span><span id="cookingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Cooking: </span><span id="cookingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Prayer -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Prayer icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Prayer: </span><span id="prayerLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Prayer: </span><span id="prayerLevel"></span></p>
                             </div>
                         </div>
                         <!-- Crafting -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Crafting icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Crafting: </span><span id="craftingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Crafting: </span><span id="craftingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Firemaking -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Firemaking icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Firemaking: </span><span id="firemakingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Firemaking: </span><span id="firemakingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Magic -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Magic icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Magic: </span><span id="magicLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Magic: </span><span id="magicLevel"></span></p>
                             </div>
                         </div>
                         <!-- Fletching -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Fletching icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Fletching: </span><span id="fletchingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Fletching: </span><span id="fletchingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Woodcutting -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Woodcutting icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Woodcutting: </span><span id="woodcuttingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Woodcutting: </span><span id="woodcuttingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Runecraft -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Runecraft icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Runecraft: </span><span id="runecraftLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Runecraft: </span><span id="runecraftLevel"></span></p>
                             </div>
                         </div>
                         <!-- Slayer -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Slayer icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Slayer: </span><span id="slayerLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Slayer: </span><span id="slayerLevel"></span></p>
                             </div>
                         </div>
                         <!-- Farming -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Farming icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Farming: </span><span id="farmingLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Farming: </span><span id="farmingLevel"></span></p>
                             </div>
                         </div>
                         <!-- Construction -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Construction icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Construction: </span><span id="constructionLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Construction: </span><span id="constructionLevel"></span></p>
                             </div>
                         </div>
                         <!-- Hunter -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Hunter icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Hunter: </span><span id="hunterLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Hunter: </span><span id="hunterLevel"></span></p>
                             </div>
                         </div>
                         <!-- Total Level -->
                         <div class="col-4">
                             <div class="text-center p-2 border rounded">
                                 <img src="images/Skills icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Total Level: </span><span class="totalLevel"></span></p>
+                                    <p class="m-0"><span class="skillTitle">Total Level: </span><span class="totalLevel"></span></p>
                             </div>
                         </div>
                     </div>
@@ -234,179 +236,41 @@
             </div>
 
             <!-- Bosses tab -->
-            <div class="col-auto tab-pane fade" id="bosses-tab-pane" role="tabpanel" aria-labelledby="bosses-tab" tabindex="0">
+            <div class="col-auto tab-pane fade show active" id="bosses-tab-pane" role="tabpanel" aria-labelledby="bosses-tab" tabindex="0">
                 <!-- Bosses grid -->
-                <div class="w-100">
-                    <div class="row g-2">
-                        <!-- Abyssal Sire -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                    <img src="images/Boss-Icons/Abyssal_orphan_detail.png" class="skill-icon">
-                                    <p><span class="skillTitle">Abyssal Sire: </span><span id="abyssal-sire-kills"></span></p>
-                            </div>
-                        </div>
-                        <!-- Hitpoints -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/Alchemical Hydra (serpentine).png" class="skill-icon">
-                                    <p><span class="skillTitle">Alchemical Hydra: </span><span id="alchemical-hydra-kills"></span></p>
-                            </div>
-                        </div>
-                        <!-- Mining -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Mining icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Mining: </span><span id="miningLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Strength -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Strength icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Strength: </span><span id="strengthLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Agility -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Agility icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Agility: </span><span id="agilityLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Smithing -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Smithing icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Smithing: </span><span id="smithingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Defence -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Defence icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Defence: </span><span id="defenceLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Herblore -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Herblore icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Herblore: </span><span id="herbloreLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Fishing -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Fishing icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Fishing: </span><span id="fishingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Ranged -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Ranged icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Ranged: </span><span id="rangedLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Thieving -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Thieving icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Thieving: </span><span id="thievingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Cooking -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Cooking icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Cooking: </span><span id="cookingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Prayer -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Prayer icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Prayer: </span><span id="prayerLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Crafting -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Crafting icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Crafting: </span><span id="craftingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Firemaking -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Firemaking icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Firemaking: </span><span id="firemakingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Magic -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Magic icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Magic: </span><span id="magicLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Fletching -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Fletching icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Fletching: </span><span id="fletchingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Woodcutting -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Woodcutting icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Woodcutting: </span><span id="woodcuttingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Runecraft -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Runecraft icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Runecraft: </span><span id="runecraftLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Slayer -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Slayer icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Slayer: </span><span id="slayerLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Farming -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Farming icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Farming: </span><span id="farmingLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Construction -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Construction icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Construction: </span><span id="constructionLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Hunter -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Hunter icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Hunter: </span><span id="hunterLevel"></span></p>
-                            </div>
-                        </div>
-                        <!-- Total Level -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Skills icon.png" class="skill-icon">
-                                    <p><span class="skillTitle">Total Level: </span><span class="totalLevel"></span></p>
+                <div class="row g-2">
+                    
+                    <!-- Abyssal Sire -->
+                    <div class="col-md-3">
+                        <div class="card bg-secondary d-flex flex-row h-100">
+                            <h2 class="card-header text-center mw-50"><span class="skillTitle">Abyssal Sire: </span><span class="fw-bolder fs-3 kill-count" id="abyssal-sire-kills"></span></h2>
+                            <div>
+                                <img src="images/Boss-Icons/Abyssal_orphan_detail.png" class="img-fluid h-auto p-5 boss-icon" alt="...">
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- Alchemical Hydra -->
+                    <div class="col-md-3">
+                        <div class="card bg-secondary d-flex flex-row h-100">
+                            <h2 class="card-header text-center"><span class="skillTitle">Alchemical Hydra: </span><span class="fw-bolder fs-3 kill-count" id="alchemical-hydra-kills"></span></h2>  
+                            <div>
+                                <img src="images/Boss-Icons/Alchemical Hydra (serpentine).png" class="img-fluid mw-100 h-auto p-5 boss-icon">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amoxliatl -->
+                    <div class="col-md-3">
+                        <div class="card bg-secondary d-flex flex-row">
+                            <h2 class="card-header text-center"><span class="skillTitle">Amoxliatl: </span><span class="fw-bolder fs-3 kill-count" id="amoxliatl-kills"></span></h2>  
+                            <div class="">
+                                <img src="images/Boss-Icons/Amoxliatl.png" class="img-fluid mw-100 h-auto p-5 boss-icon">
+                            </div>    
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 

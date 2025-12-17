@@ -37,10 +37,7 @@ async function loadPlayerData(username) {
     document.getElementById("runecraftLevel").innerText=result.skills[21].level;
     document.getElementById("hunterLevel").innerText=result.skills[22].level;
     document.getElementById("constructionLevel").innerText=result.skills[23].level;
-    document.getElementById("totalLevel").innerText=result.skills[0].level;
-
-    document.getElementById("playerName").innerText=result.name;
-    document.getElementById("totalXP").innerText=result.skills[0].xp;
+    
 
 
     /* Populate the Bosses Tab */
