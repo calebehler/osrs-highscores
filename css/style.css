@@ -2,8 +2,16 @@
     font-family: runescape;
     src: url("../fonts/runescape.ttf") format('truetype')
 
-
 }
+@font-face {
+    font-family: runescape-bold;
+    src: url("../fonts/runescape_bold.ttf") format('truetype')
+}
+@font-face {
+    font-family: runescape-small;
+    src: url("../fonts/runescape_small.ttf") format('truetype')
+}
+
 body{
     background-color: steelblue;
     font-family: runescape;
@@ -11,58 +19,45 @@ body{
 }
 
 
-.navbarButton{
-    flex-wrap: nowrap;
-    padding: 0 0 0 0;
-    margin: 2px;
-    width: 25%;
-    height: 48px;
+
+#skills-tab-pane{
+    background-color: black;
+}
+
+#bosses-tab-pane{
+    background-color: black;
+}
+
+#minigames-tab-pane{
+    background-color: black;
+}
+
+#raids-tab-pane{
+    background-color: black;
+}
+
+
+/* Bootstrap Overrides */
+.nav-link{
+    background-color: grey !important;
+    color: black !important;
     border: none;
-    font-family: runescape;
-    font-size: 36px;
-}
-
-#skilsButton{
-
-}
-
-#bossesButton{
-
-}
-
-#minigamesButton{
-
-}
-
-#raidsButton{
-
-}
-
-.mainDiv{
-    border: 2px solid black;
-    margin: 4px;
-
-}
-
-.bodyTable{
-    background-color: white;
-    border: 4px solid black;
-    border-style: groove black;
     
 }
 
-td{
-    border: 4px solid black;
+.nav-link.active{
+    background-color: black !important;
+    color: yellow !important;
 }
 
-#generalSubtable{
-    font-size: larger;
-    font-weight: bolder;
-    
+
+
+.skillTitle{
+    color: yellow !important;
 }
 
-.skill-icon{
-    
+.skill-card{
+    background-color: grey;
 }
 
 .boss-card{
@@ -70,8 +65,20 @@ td{
 }
 
 .boss-icon{
-    
+    display: block;
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
 
+@media (max-width: 576px) {
+    .boss-icon{
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.boss-name{
     
 }
 

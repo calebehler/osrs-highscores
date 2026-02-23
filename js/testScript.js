@@ -1,6 +1,6 @@
 function submitPlayerName(){
 
-    var playerName = (document.getElementById("textbod").value);
+    var playerName = (document.getElementById("username-input").value);
 
     if(playerName == ""){
         return false;
