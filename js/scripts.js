@@ -1,7 +1,7 @@
 async function loadPlayerData(username) {
   
   
-  const url = "https://proxy.corsfix.com/?https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=".concat(username);
+  const url = "https://api.allorigins.win/raw?url=https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=".concat(username);
   console.log(url);
   try {
     const response = await fetch(url);
