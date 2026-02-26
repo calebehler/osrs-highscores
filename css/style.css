@@ -38,6 +38,10 @@ body{
 
 
 /* Bootstrap Overrides */
+.nav-item{
+    font-size: xx-large;
+}
+
 .nav-link{
     background-color: grey !important;
     color: black !important;

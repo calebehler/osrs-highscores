@@ -37,19 +37,19 @@
 
             </div>
 
-            <div class="col-md-3 border">
+            <div class="col-md-3 border text-white">
                  <table class="table-responsive fs-4 h-100">
                     <tr>
                         <th class="p-1">Name: </th>
-                        <td class="mw-50">test</td>
+                        <td id="player-name" class="mw-50"></td>
                     </tr>
                     <tr>
                         <th class="p-1">Total XP: </th>
-                        <td class="mw-50">testasdasdsadasd</td>
+                        <td id="total-xp" class="mw-50"></td>
                     </tr>
                     <tr>
                         <th class="p-1">Rank: </th>
-                        <td class="mw-50">test</td>
+                        <td id="overall-rank" class="mw-50"></td>
                     </tr>
 
 
@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col">
                 <!-- Navbar -->
-                <nav class="nav nav-tabs justify-content-center mt-2 border-0 pb-1">
+                <nav class="nav nav-tabs justify-content-center mt-2 border-0">
                     <li class="nav-item mx-1" role="presentation">
                         <button class="nav-link active border-0" id="skills-tab" type="button" data-bs-toggle="tab" data-bs-target="#skills-tab-pane" aria-controls="skills-tab-pane" aria-selected="true">Skills</button>
                     </li>
@@ -285,7 +285,7 @@
 
                             <div class="d-flex w-100 flex-grow-1">
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="abyssal-sire-kills">test</h2>
+                                    <h2 class="fw-bolder kill-count text-center" id="abyssal-sire-kills">0</h2>
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Abyssal_orphan_detail.png" class="boss-icon img-fluid">
@@ -305,7 +305,7 @@
 
                             <div class="d-flex w-100 flex-grow-1">
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="alchemical-hydra-kills">test</h2>
+                                    <h2 class="fw-bolder kill-count text-center" id="alchemical-hydra-kills">0</h2>
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Alchemical Hydra (serpentine).png" class="boss-icon img-fluid">
@@ -326,7 +326,7 @@
 
                             <div class="d-flex w-100 flex-grow-1">
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="amoxliatl-kills">test</h2>
+                                    <h2 class="fw-bolder kill-count text-center" id="amoxliatl-kills">0</h2>
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Amoxliatl.png" class="boss-icon img-fluid">
@@ -346,7 +346,7 @@
 
                             <div class="d-flex w-100 flex-grow-1">
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="araxxor-kills">test</h2>
+                                    <h2 class="fw-bolder kill-count text-center" id="araxxor-kills">0</h2>
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Araxxor.png" class="boss-icon img-fluid">
@@ -366,7 +366,7 @@
 
                             <div class="d-flex w-100 flex-grow-1">
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="artio-kills">test</h2>
+                                    <h2 class="fw-bolder kill-count text-center" id="artio-kills">0</h2>
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Artio.png" class="boss-icon img-fluid">
@@ -392,6 +392,23 @@
                         </div>
                     </div>
 
+                    <!-- Brutus -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Brutus</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="brutus-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Brutus.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Bryophyta -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -404,6 +421,23 @@
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Bryophyta.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Callisto -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Callisto</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="callisto-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Callisto.png" class="boss-icon img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -443,39 +477,7 @@
                         </div>
                     </div>
 
-                    <!-- Chambers of Xeric -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card bg-secondary d-flex flex-column h-100">
-                            <div class="card-header text-center w-100">
-                                <h2 class="fw-bolder m-0">Chambers of Xeric</h2>
-                            </div>
-                            <div class="d-flex w-100 flex-grow-1">
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="chambers-xeric-kills">0</h2>
-                                </div>
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <img src="images/Boss-Icons/Great Olm.png" class="boss-icon img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chambers of Xeric: Challenge Mode -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card bg-secondary d-flex flex-column h-100">
-                            <div class="card-header text-center w-100">
-                                <h2 class="fw-bolder m-0">Chambers (CM)</h2>
-                            </div>
-                            <div class="d-flex w-100 flex-grow-1">
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="chambers-xeric-cm-kills">0</h2>
-                                </div>
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <img src="images/Boss-Icons/Great Olm.png" class="boss-icon img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- Chaos Elemental -->
                     <div class="col-md-3 col-sm-6">
@@ -625,6 +627,23 @@
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Deranged archaeologist.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doom of Mokhaiotl -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Doom of Mokhaiotl</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="doom-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Doom of Mokhaiotl.png" class="boss-icon img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -851,6 +870,40 @@
                         </div>
                     </div>
 
+                    <!-- The Nightmare -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">The Nightmare</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="nightmare-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/The Nightmare.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phosani's Nightmare -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Phosani's Nightmare</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="phosanis-nightmare-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/The Nightmare.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Obor -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -936,6 +989,23 @@
                         </div>
                     </div>
 
+                    <!-- Shellbane Gryphon -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Shellbane Gryphon</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="shellbane-gryphon-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Shellbane gryphon.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Skotizo -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -948,6 +1018,23 @@
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Skotizo.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sol Heredit -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Sol Heredit</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="sol-heredit-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Sol Heredit.png" class="boss-icon img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1089,23 +1176,6 @@
                         </div>
                     </div>
 
-                    <!-- Theatre of Blood -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card bg-secondary d-flex flex-column h-100">
-                            <div class="card-header text-center w-100">
-                                <h2 class="fw-bolder m-0">Theatre of Blood</h2>
-                            </div>
-                            <div class="d-flex w-100 flex-grow-1">
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="theatre-blood-kills">0</h2>
-                                </div>
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <img src="images/Boss-Icons/Verzik Vitur (final form).png" class="boss-icon img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Thermonuclear Smoke Devil -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -1118,40 +1188,6 @@
                                 </div>
                                 <div class="w-50 d-flex align-items-center justify-content-center p-2">
                                     <img src="images/Boss-Icons/Thermonuclear smoke devil.png" class="boss-icon img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tombs of Amascut -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card bg-secondary d-flex flex-column h-100">
-                            <div class="card-header text-center w-100">
-                                <h2 class="fw-bolder m-0">Tombs of Amascut</h2>
-                            </div>
-                            <div class="d-flex w-100 flex-grow-1">
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="tombs-amascut-kills">0</h2>
-                                </div>
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <img src="images/Boss-Icons/Tumeken's Warden (level-489).png" class="boss-icon img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tombs of Amascut: Expert Mode -->
-                    <div class="col-md-3 col-sm-6">
-                        <div class="card bg-secondary d-flex flex-column h-100">
-                            <div class="card-header text-center w-100">
-                                <h2 class="fw-bolder m-0">Tombs (Expert)</h2>
-                            </div>
-                            <div class="d-flex w-100 flex-grow-1">
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <h2 class="fw-bolder kill-count text-center" id="tombs-expert-kills">0</h2>
-                                </div>
-                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
-                                    <img src="images/Boss-Icons/Tumeken's Warden (level-489).png" class="boss-icon img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -1208,6 +1244,40 @@
                         </div>
                     </div>
 
+                    <!-- Venenatis -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Venenatis</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="venenatis-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Venenatis.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vet'ion -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Vet'ion</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="vetion-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Vet'ion.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Vorkath -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -1259,6 +1329,23 @@
                         </div>
                     </div>
 
+                    <!-- Zalcano -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Zalcano</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="zalcano-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Zalcano.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Zulrah -->
                     <div class="col-md-3 col-sm-6">
                         <div class="card bg-secondary d-flex flex-column h-100">
@@ -1281,167 +1368,408 @@
             </div>
 
             <!-- Raids tab -->
-            <div class="col-auto tab-pane fade m-0 p-3" id="raids-tab-pane" role="tabpanel" aria-labelledby="raids-tab" tabindex="0">
+            <div class="col tab-pane fade m-0 p-3" id="raids-tab-pane" role="tabpanel" aria-labelledby="raids-tab" tabindex="0">
                     <div class="row g-2">
-                        <!-- Raid 1 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 1: </span><span></span></p>
+                        <!-- Chambers of Xeric -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Chambers of Xeric</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="chambers-xeric-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Great Olm.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Raid 2 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 2: </span><span></span></p>
+                    </div>
+
+                    <!-- Theatre of Blood -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Theatre of Blood</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="theatre-blood-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Verzik Vitur (final form).png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Raid 3 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 3: </span><span></span></p>
+                    </div>
+
+                    <!-- Tombs of Amascut -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Tombs of Amascut</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="toa-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Tumeken's Warden (level-489).png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Raid 4 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 4: </span><span></span></p>
+                    </div>
+
+                    <!-- Chambers of Xeric: Challenge Mode -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Chambers of Xeric: Challenge Mode</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="chambers-xeric-cm-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Great Olm.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Raid 5 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 5: </span><span></span></p>
+                    </div>
+                    
+                    
+
+                    <!-- Theatre of Blood: Hard Mode -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Theatre of Blood: Hard Mode</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="theatre-blood-hm-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Verzik Vitur (final form).png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Raid 6 -->
-                        <div class="col-6">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Raid 6: </span><span></span></p>
+                    </div>
+
+
+                    <!-- Tombs of Amascut: Expert Mode -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Tombs of Amascut: Expert Mode</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="toa-em-kills">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Boss-Icons/Tumeken's Warden (level-489).png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
+                    </div>
+
                     </div>
             </div>
 
             <!-- Minigames tab -->
             <div class="col-auto tab-pane fade m-0 p-3" id="minigames-tab-pane" role="tabpanel" aria-labelledby="minigames-tab" tabindex="0">
-                <div class="w-100">
-                    <div class="row g-2">
-                        <!-- Minigame 1 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 1: </span><span></span></p>
+                <div class="row g-2">
+                    
+                    <!-- Grid Points -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Grid Points</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="grid-points">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Grid-Master.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 2 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 2: </span><span></span></p>
+                    </div>
+
+                    <!-- League Points -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">League Points</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="league-points">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Leagues icon.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 3 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 3: </span><span></span></p>
+                    </div>
+
+                    <!-- Deadman Points -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Deadman Points</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="deadman-points">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Deadman's skull detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 4 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 4: </span><span></span></p>
+                    </div>
+                    <!-- Bounty Hunter - Hunter -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Bounty Hunter - Hunter</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="bounty-hunter-hunter">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Ancient relic detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 5 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 5: </span><span></span></p>
+                    </div>
+                    <!-- Bounty Hunter - Rogue -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Bounty Hunter - Rogue</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="bounty-hunter-rogue">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Ancient relic detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 6 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 6: </span><span></span></p>
+                    </div>
+
+                    <!-- Clue Scrolls - All -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - All</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-all">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (Song of the Elves) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 7 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 7: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Beginner -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Beginner</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-beginner">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (beginner) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 8 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 8: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Easy -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Easy</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-easy">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (easy) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 9 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 9: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Medium -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Medium</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-medium">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (medium) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 10 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 10: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Hard -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Hard</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-hard">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (hard) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 11 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 11: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Elite -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Elite</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-elite">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (elite) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 12 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 12: </span><span></span></p>
+                    </div>
+                    <!-- Clue Scrolls - Master -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Clue Scrolls - Master</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="clue-scrolls-master">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Clue scroll (master) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 13 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 13: </span><span></span></p>
+                    </div>
+                    <!-- Last Man Standing - Rank -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Last Man Standing - Rank</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="lms-rank">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Victor's cape (1000) detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 14 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 14: </span><span></span></p>
+                    </div>
+                    <!-- PvP Arena: Rank -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">PvP Arena: Rank</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="pvp-arena-rank">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Scroll of imbuing detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 15 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 15: </span><span></span></p>
+                    </div>
+                    <!-- Soul Wars Zeal -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Soul Wars Zeal</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="soul-wars-zeal">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Avatar of Creation.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
-                        <!-- Minigame 16 -->
-                        <div class="col-4">
-                            <div class="text-center p-2 border rounded">
-                                <img src="images/Boss-Icons/placeholder.png" class="skill-icon">
-                                    <p><span class="skillTitle">Minigame 16: </span><span></span></p>
+                    </div>
+                    <!-- Rifts Closed -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Rifts Closed</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="rifts-closed">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/The Great Guardian.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Colosseum Glory -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Colosseum Glory</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="colosseum-glory">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Dizana's quiver detail.png" class="boss-icon img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Collections Logged -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card bg-secondary d-flex flex-column h-100">
+                            <div class="card-header text-center w-100">
+                                <h2 class="fw-bolder m-0">Collections Logged</h2>
+                            </div>
+                            <div class="d-flex w-100 flex-grow-1">
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <h2 class="fw-bolder kill-count text-center" id="collections-logged">0</h2>
+                                </div>
+                                <div class="w-50 d-flex align-items-center justify-content-center p-2">
+                                    <img src="images/Activity-Icons/Collection log detail.png" class="boss-icon img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
