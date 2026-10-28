@@ -6,7 +6,7 @@ function submitPlayerName(){
         return false;
     }
     else{
-    console.log(playerName);
+    console.log("Received player name: " + playerName);
     loadPlayerData(playerName);
     }
 
